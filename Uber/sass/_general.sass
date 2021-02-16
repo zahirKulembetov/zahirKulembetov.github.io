@@ -1,0 +1,426 @@
+body
+   a
+      &:hover
+         text-decoration: none
+nav
+   position: fixed
+   min-height: 50px
+   width: 100%
+   background-color: #212121
+   z-index: 3
+.hamburger
+   display: none
+header
+   position: relative
+   min-height: 50px
+.menu
+   display: flex
+   justify-content: space-between
+   list-style: none
+   padding: 13px 70px
+   margin: 0
+   &__item
+      border-right: 2px dotted #000
+      padding-right: 28px
+   &__link
+      font-size: 15px
+      font-weight: 300
+      color: #ffffff
+      &:hover
+         color: $main-color
+.subheader
+   position: absolute
+   top: 50px
+   width: 100%
+   height: 84px
+   background-color: rgba(0, 0, 0, 0.6)
+   &__logo
+      display: block
+      max-width: 100%
+      margin-top: 16px
+   &__logo-text
+      margin-top: 6px
+      font-size: 13px
+      font-weight: 400
+      color: rgba(255, 255, 255, 0.5)
+   &__call
+      margin-top: 19px
+      font-size: 12px
+      font-weight: 300
+      color: #ffffff
+      text-align: right
+   &__phone
+      display: block
+      margin-top: 8px
+      color: #ffffff
+      font-size: 22px
+      font-weight: 400
+      text-transform: uppercase
+      text-align: right
+      line-height: 12px
+      &:hover
+         color: $main-color
+   &__btn
+      margin-top: 19px
+      width: 172px
+      height: 46px
+      font-weight: 400
+      box-shadow: inset 0px -3px 0 0 rgba(0, 0, 0, 0.12)
+      border: none
+      border-radius: 4px
+      background-image: linear-gradient(to top, $main-color, #4ce2ff)
+      text-shadow: 0.7px 0.7px 0 rgba(0, 0, 0, 0.21)
+      font-size: 14px
+      text-align: center
+      color: #ffffff
+      text-transform: uppercase
+      @include btn_hover
+.promo
+   min-height: 800px
+   padding: 150px 0 135px 0
+   background: url("../img/bg/main-bg.jpg") center (center / cover) no-repeat
+   &__header
+      font-size: 60px
+      color: #ffffff
+      font-weight: 700
+      text-transform: uppercase
+      text-align: center
+      line-height: 60px
+      margin: 0
+   &__header-title
+      font-size: 36px
+      color: #ffffff
+      font-weight: 700
+      text-transform: uppercase
+      text-align: center
+      line-height: 36px
+      margin: 0
+      margin-top: 22px
+   &__text
+      margin-top: 23px
+      font-size: 18px
+      color: #ffffff
+      font-weight: 400
+      text-align: center
+      line-height: 24px
+   &__btn
+      display: block
+      margin: 118px auto 0 auto
+      width: 259px
+      height: 63px
+      box-shadow: inset 0px -4px 0 0 rgba(0, 0, 0, 0.12)
+      border: none
+      border-radius: 4px
+      background-image: linear-gradient(to top, $main-color, #4ce2ff)
+      text-shadow: 0.7px 0.7px 0 rgba(0, 0, 0, 0.21)
+      font-size: 18px
+      color: #ffffff
+      text-transform: uppercase
+      @include btn_hover
+
+.label
+   position: relative
+   margin: 0 auto
+   height: 24px
+   width: 112px
+   padding: 5px 12px
+   background-color: #000000
+   color: #ffffff
+   font-size: 11px
+   font-weight: 300
+   text-transform: uppercase
+   text-align: center
+   z-index: 2
+   &__light
+      background-color: #fff
+      color: #000
+.title
+   position: relative
+   margin-bottom: 0
+   margin-top: 38px
+   color: #222222
+   font-size: 38px
+   font-weight: 700
+   text-transform: uppercase
+   text-align: center
+   z-index: 2
+   &__light
+      color: #fff
+
+.subtitle
+   position: relative
+   margin-top: 19px
+   font-size: 17px
+   text-align: center
+   color: #222222
+   font-weight: 400
+   z-index: 2
+   &__light
+      color: #fff
+
+.reasons
+   padding: 71px 0 65px 0 //очень странно (в коде Ивана его нету) !!! разобраться
+   &__block
+      display: flex
+      justify-content: center
+      align-items: center
+      margin-top: 35px
+   &__round
+      display: flex
+      justify-content: center
+      align-items: center
+      margin-right: 26px
+      width: 113px
+      height: 113px
+      background-color: $main-color
+      border-radius: 100%
+   &__descr
+      width: 343px
+   &__subtitle
+      line-height: 21px
+      color: $main-color
+      font-size: 17px
+      font-weight: 400
+   &__text
+      color: #202020
+      font-size: 15px
+      font-weight: 300
+      line-height: 21px
+
+.mobile
+   min-height: 864px
+   padding: 48px 0 79px 0
+   background: url("../img/bg/bg-app/bg_main_app.jpg") center (center / cover) no-repeat
+   .row
+      margin-top: 32px
+   &__item
+      position: relative
+      width: 320px
+      height: 280px
+      margin: 0 auto
+      margin-bottom: 19px
+      padding-top: 91px
+      &-1
+         background: url("../img/bg/bg-app/1.jpg")
+      &-2
+         background: url("../img/bg/bg-app/2.jpg")
+      &-3
+         background: url("../img/bg/bg-app/3.jpg")
+      &-4
+         background: url("../img/bg/bg-app/4.jpg")
+      &-5
+         background: url("../img/bg/bg-app/5.jpg")
+      &-6
+         background: url("../img/bg/bg-app/6.jpg")
+      &-title
+         font-size: 24px
+         line-height: 31px
+         text-align: center
+         color: #ffffff
+         text-transform: uppercase
+         font-weight: 400
+      &-plus
+         display: flex
+         justify-content: center
+         align-items: center
+         position: absolute
+         bottom: 35px
+         left: 50%
+         transform: translateX(-50%)
+         width: 26px
+         height: 26px
+         border-radius: 100%
+         background-color: #000000
+         margin: 0 auto
+         cursor: pointer
+         &::before
+            content: ''
+            display: block
+            width: 14px
+            height: 1px
+            background-color: $main-color
+            transition: 0.3s all
+         &::after
+            content: ''
+            display: block
+            position: absolute
+            left: 50%
+            transform: translateX(-50%)
+            height: 14px
+            width: 2px
+            background-color: $main-color
+            transition: 0.3s all
+         &:hover
+            &::before, &::after
+               background-color: $second-color
+
+.choice
+   position: relative
+   min-height: 896px
+   padding: 57px 0 138px 0
+   background: url("../img/bg/bg-app/bg_main_app.jpg") center (center / cover) no-repeat
+   &__img
+      position: relative
+      display: block
+      margin-top: 56px
+      text-align: center
+      z-index: 2
+   &__descr
+      margin-top: 4px
+      font-size: 17px
+      font-weight: 300
+      line-height: 24px
+      text-align: center
+      color: #222222
+   &__dark-block
+      position: absolute
+      height: 540px
+      width: 100%
+      top: 0
+      left: 0
+      background-color: #070716
+      z-index: 1
+.requirements
+   padding: 68px 0 84px 0
+   &__block
+      margin: 33px 0
+      &-nmb
+         margin-bottom: 0
+   &__title
+      font-size: 22px
+      font-weight: 400
+      color: #1ca8c3
+   &__list
+      list-style: none
+      margin-top: 22px
+      padding-left: 52px
+      li
+         position: relative
+         margin-bottom: 10px
+         font-size: 17px
+         font-weight: 300
+         line-height: 24px
+         color: #222222
+         &::before
+            content: ''
+            display: block
+            position: absolute
+            top: 3px
+            left: -32px
+            width: 21px
+            height: 20px
+            background: url(../img/icons/check-marks/blue.png) center (center / cover) no-repeat
+   &__descr
+      font-size: 17px
+      font-weight: 300
+      line-height: 24px
+      color: #1ca8c3
+   .warning
+      .requirements__title
+         color: $second-color
+      .requirements__list
+         li
+            &::before
+               background: url(../img/icons/check-marks/red.png) center (center / cover) no-repeat
+
+.worldwide
+   position: relative
+   padding: 49px 0
+   min-height: 717px
+   background: url("../img/bg/worldwild-bg1.jpg") center (center / cover) no-repeat
+   &__bottom-text
+      position: absolute
+      left: 50%
+      transform: translateX(-50%)
+      bottom: 49px
+      text-align: center
+      a
+         font-size: 15px
+         font-weight: 400
+         color: #1fbad6
+         text-transform: uppercase
+         &:hover
+            text-decoration: none
+            color: #fff
+footer
+   padding: 14px 23px 31px 56px
+   a
+      &:hover
+         text-decoration: none
+.footer
+   &__line
+      margin: 0 auto
+      width: 299px
+      height: 4px
+      background-color: #1fbad6
+   &__wrapper
+      display: flex
+      justify-content: space-between
+      align-items: flex-start
+      padding-top: 32px
+   &__wrapper > div
+      width: 33%
+      &:nth-child(3)
+         display: flex
+         justify-content: flex-end
+   &__social-media
+      width: 160px
+      display: flex
+      justify-content: space-between
+      &-round
+         display: flex
+         justify-content: center
+         align-items: center
+         margin: 0 4px
+         width: 32px
+         height: 32px
+         background-color: #070716
+         border-radius: 100%
+         span
+            color: #fff
+            &:hover
+               color: $main-color
+   &__links
+      width: 390px
+      margin: 0 auto
+      &-menu-top
+         display: flex
+         justify-content: space-between
+         padding: 0 10px
+         transition: 0.3s all
+         a
+            color: #070716
+            font-size: 15px
+            font-weight: 300
+            text-transform: uppercase
+            &:hover
+               color: $main-color
+
+      &-menu-bottom
+         display: flex
+         justify-content: space-between
+         margin-top: 10px
+         a
+            color: #999999
+            font-size: 11px
+            font-weight: 300
+            text-transform: uppercase
+            &:hover
+               color: $main-color
+   &__bottom-text
+      display: block
+      margin: 0 auto
+      color: #1fbad6
+      font-size: 11px
+      font-weight: 400
+      margin-top: 19px
+      text-transform: uppercase
+      text-align: center
+   &__app-store
+      width: 296px
+      display: flex
+      justify-content: space-between
+      align-content: center
+      margin: 0 14px
+.xs-visible
+   display: none
