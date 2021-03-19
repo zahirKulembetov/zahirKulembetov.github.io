@@ -10,3 +10,4 @@
 7) https://zahirkulembetov.github.io/resultIN
 8) https://zahirkulembetov.github.io/startupTech
 9) https://zahirkulembetov.github.io/Portfolio
+10) https://zahirkulembetov.github.io/ItogIN   
