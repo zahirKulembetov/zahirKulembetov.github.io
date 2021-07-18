@@ -1,5 +1,5 @@
 # zahirKulembetov.github.io
-Сайты:
+Портфолио:
 
 1) https://zahirkulembetov.github.io/supra1-1
 2) https://zahirkulembetov.github.io/Uber
